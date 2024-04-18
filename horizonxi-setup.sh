@@ -1,6 +1,7 @@
 #!/bin/bash
 version=1.2.4
 
+rm -ivr ~/Games/HorizonXI/Launcher
 mkdir -p ~/Games/HorizonXI/{Launcher,Prefix}
 cd ~/Games/HorizonXI/Launcher
 wget -c https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases/download/v$version/HorizonXI-Launcher-$version.Setup.exe && \
