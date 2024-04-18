@@ -14,3 +14,4 @@ mv lib/net45/* . && \
 rmdir lib/net45 && \
 rmdir lib && \
 rm -v HorizonXI-Launcher-$version.Setup.exe HorizonXI_Launcher-$version-full.nupkg
+exit 0
