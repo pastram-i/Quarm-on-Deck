@@ -14,9 +14,11 @@ mv lib/net45/* . && \
 rmdir lib/net45 && \
 rmdir lib && \
 rm -v HorizonXI-Launcher-$version.Setup.exe HorizonXI_Launcher-$version-full.nupkg
-if [ - "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
+if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
 mkdir -p $HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher
 cd $HOME/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher
+wget -c https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher/config.json
+wget -c https://raw.githubusercontent.com/TeamLinux01/HorizonXI-on-Deck/main/Games/HorizonXI/Prefix/pfx/drive_c/users/steamuser/AppData/Roaming/HorizonXI-Launcher/storage.json
 fi
-echo "Copying install files completed."
+echo "Copying install files completed. It is safe to close the terminal."
 exit 0
