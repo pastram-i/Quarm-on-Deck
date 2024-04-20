@@ -1,5 +1,7 @@
 # Setting up HorizonXI on Valve's Steam Deck
 
+These instructions and script install version 1.2.4 of the launcher.
+
 ## Prerequisites
 
 * [Register a HorizonXI account](https://horizonxi.com/register)
