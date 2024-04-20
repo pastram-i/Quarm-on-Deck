@@ -34,3 +34,20 @@ These instructions and script install version 1.2.4 of the launcher.
     1. Click the **Play HorizonXI** when it is enabled.
 
 Enjoy the game! It should be safe to restart into game mode. Don't forget to setup *Steam Input* in Steam, so you can still use the mouse and the rest of the controller.
+
+## Backup settings
+
+Settings can be easily backed up and restored using the program [Ludusavi](https://flathub.org/apps/com.github.mtkennerly.ludusavi).
+
+Under **CUSTOM GAMES** tab, click the **Add game** button and add the following settings.
+```
+Name: HorizonXI
+Type drop-down: Game
+
+Add three paths:
+    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
+    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
+    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
+```
+
+Now HorizonXI will will show up as a game to backup and restore.
