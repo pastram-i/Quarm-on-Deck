@@ -1,6 +1,6 @@
 # Setting up HorizonXI on Valve's Steam Deck
 
-These instructions and script install version 1.2.4 of the launcher.
+These instructions and script install version 1.3.0 of the launcher.
 
 ## Prerequisites
 
