@@ -47,7 +47,7 @@
 			"name": "clock",
 			"description": "Allows the player to display various times on screen..",
 			"author": "atom0s",
-			"enabled": true
+			"enabled": false
 		},
 		"config": {
 			"id": "10",
@@ -110,7 +110,7 @@
 			"name": "fps",
 			"description": "Displays and manipulates the games framerate handling.",
 			"author": "atom0s",
-			"enabled": true
+			"enabled": false
 		},
 		"hideconsole": {
 			"id": "19",
@@ -125,13 +125,6 @@
 			"description": "IME is an addon that enables the Japanese IME toolbar on any language client. This allows you to type in Japanese regardless of what language your client is set to.",
 			"author": "atom0s",
 			"enabled": false
-		},
-		"ImGui Style": {
-			"id": "22",
-			"name": "ImGui Style",
-			"description": "Allows players to customize the overall UI system theme.",
-			"author": "atom0s",
-			"enabled": true
 		},
 		"instantah": {
 			"id": "23",
@@ -251,6 +244,62 @@
 			"description": "FFXII style combat lines for FFXI.",
 			"author": "Jyouya",
 			"enabled": true
+		},
+		"Balloon": {
+			"id": "42",
+			"name": "Balloon",
+			"description": "Displays NPC text in pretty popup bubbles.",
+			"author": "Hando, Yuki, Kenshi, Ghosty, and onimitch",
+			"enabled": false
+		},
+		"Chains": {
+			"id": "43",
+			"name": "Chains",
+			"description": "Display current skillchain options.",
+			"author": "Sippius, Ivaar, and NerfOnline",
+			"enabled": true
+		},
+		"CleanCS": {
+			"id": "44",
+			"name": "CleanCS",
+			"description": "Hides addon elements during cutscenes.",
+			"author": "atom0s",
+			"enabled": true
+		},
+		"ImGuiStyle": {
+			"id": "49",
+			"name": "ImGuiStyle",
+			"description": "Allows players to customize the overall UI system theme.",
+			"author": "atom0s",
+			"enabled": false
+		},
+		"Mipmap": {
+			"id": "45",
+			"name": "Mipmap",
+			"description": "Removes the recent patch made by SE to alter how mipmaps are configured.",
+			"author": "atom0s",
+			"enabled": false
+		},
+		"NoCombat": {
+			"id": "46",
+			"name": "NoCombat",
+			"description": "Changes the combat music for a zone to match the zone's default music.",
+			"author": "Thorny",
+			"enabled": false
+		},
+		"NoMount": {
+			"id": "47",
+			"name": "NoMount",
+			"description": "Blocks default mount music.",
+			"author": "Thorny",
+			"enabled": false
+		},
+		"ZoneName": {
+			"id": "48",
+			"name": "ZoneName",
+			"description": "Displays the zone and region name for a short time while changing zones.",
+			"author": "Xenonsmurf and onimitch",
+			"enabled": true
 		}
 	},
 	"plugins": {
@@ -318,7 +367,7 @@
 		"0002": {
 			"name": "Window Height",
 			"key": "0002",
-			"value": 800
+			"value": 720
 		},
 		"0003": {
 			"name": "Background Width",
@@ -328,7 +377,7 @@
 		"0004": {
 			"name": "Background Height",
 			"key": "0004",
-			"value": 1600
+			"value": 1440
 		},
 		"0005": {
 			"name": "Unknown/Unused",
@@ -498,7 +547,7 @@
 		"0038": {
 			"name": "Menu Height",
 			"key": "0038",
-			"value": 800
+			"value": 720
 		},
 		"0039": {
 			"name": "IME Mode",
@@ -540,7 +589,7 @@
 			"key": "padmode000",
 			"value": [
 				1,
-				1,
+				0,
 				0,
 				0,
 				0,
@@ -626,23 +675,20 @@
 			"author": "HorizonXI",
 			"enabled": true
 		},
-		"horizonoverrides": {
-			"dirname": "horizonoverrides",
-			"name": "Horizonoverrides",
-			"enabled": true
-		},
 		"xiview": {
 			"dirname": "xiview",
 			"name": "XIView",
 			"description": "FFXI UI & Icon Changes. Modified by HorizonXI.",
 			"author": "KenshiDRK",
 			"enabled": true
+		},
+		"horizonoverrides": {
+			"dirname": "horizonoverrides",
+			"name": "Horizon Overrides",
+			"enabled": true,
+			"description": "Ensures that custom textures such as Ducal Aketon display properly, even with texture packs installed.",
+			"author": "HorizonXI"
 		}
 	},
-	"theme": "dark",
-	"__internal__": {
-		"migrations": {
-			"version": "1.2.4"
-		}
-	}
+	"theme": "dark"
 }

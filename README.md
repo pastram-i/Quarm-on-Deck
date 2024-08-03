@@ -2,6 +2,8 @@
 
 These instructions and script install version 1.3.0 of the launcher.
 
+This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
+
 ## Prerequisites
 
 * [Register a HorizonXI account](https://horizonxi.com/register)
@@ -19,7 +21,7 @@ These instructions and script install version 1.3.0 of the launcher.
 
 1. Right-click the Steam game **HorizonXI-Launcher.exe** and click on **Properties...*
 
-    1. Add `STEAM_COMPAT_DATA_PATH=$HOME/Games/HorizonXI/Prefix/ %command%` to the *LAUNCH OPTIONS*
+    1. Add `STEAM_COMPAT_DATA_PATH="$HOME"/Games/HorizonXI/Prefix/ %command%` to the *LAUNCH OPTIONS*
 
     1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **GE-Proton7-42**.
 
@@ -53,9 +55,9 @@ Name: HorizonXI
 Type drop-down: Game
 
 Add three paths:
-    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
-    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
-    /home/deck/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
+    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
+    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
+    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
 ```
 
 Now HorizonXI will will show up as a game to backup and restore.
