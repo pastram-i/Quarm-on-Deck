@@ -19,7 +19,7 @@ These instructions and script install version 1.3.0 of the launcher.
 
 1. Right-click the Steam game **HorizonXI-Launcher.exe** and click on **Properties...*
 
-    1. Add `STEAM_COMPAT_DATA_PATH=/home/deck/Games/HorizonXI/Prefix/ %command%` to the *LAUNCH OPTIONS*
+    1. Add `STEAM_COMPAT_DATA_PATH=$HOME/Games/HorizonXI/Prefix/ %command%` to the *LAUNCH OPTIONS*
 
     1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **GE-Proton7-42**.
 
@@ -34,6 +34,14 @@ These instructions and script install version 1.3.0 of the launcher.
     1. Click the **Play HorizonXI** when it is enabled.
 
 Enjoy the game! It should be safe to restart into game mode. Don't forget to setup *Steam Input* in Steam, so you can still use the mouse and the rest of the controller.
+
+### Updating the launcher
+
+Download the newest version of the script and re-run it. It will ask if you would like to remove the launcher files, type `y` to say yes. It will then download the new launcher files and extract them to the same location as the previous version.
+
+At this point, you can close the script and go back to using the game as normal; nothing else should need to be touched.
+
+If the updated launcher has changed some add-ons, you can change the settings inside the launcher at the point of starting the game with the new launcher.
 
 ## Backup settings
 
