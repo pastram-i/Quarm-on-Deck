@@ -21,7 +21,11 @@ This script will automatically setup the Windows install path to be `C:\Program 
 
 1. Right-click the Steam game **HorizonXI-Launcher.exe** and click on **Properties...*
 
-    1. Add `STEAM_COMPAT_DATA_PATH="$HOME"/Games/HorizonXI/Prefix/ %command%` to the *LAUNCH OPTIONS*
+    1. Add
+       ```
+       STEAM_COMPAT_DATA_PATH="$HOME"/Games/HorizonXI/Prefix/ %command%
+       ```
+       to the *LAUNCH OPTIONS*
 
     1. Click **Compatibility** tab, checkbox **Force the use of a specific Steam Play compatibility tool** and select **GE-Proton7-42**.
 
@@ -50,14 +54,22 @@ If the updated launcher has changed some add-ons, you can change the settings in
 Settings can be easily backed up and restored using the program [Ludusavi](https://flathub.org/apps/com.github.mtkennerly.ludusavi).
 
 Under **CUSTOM GAMES** tab, click the **Add game** button and add the following settings.
+
+`Name:`
 ```
-Name: HorizonXI
-Type drop-down: Game
+HorizonXI
+```
+`Type drop-down: Game`
 
 Add three paths:
-    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
-    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
-    "$HOME"/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
+```
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/config
+```
+```
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/scripts
+```
+```
+<home>/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI/Game/SquareEnix/FINAL FANTASY XI/USER
 ```
 
 Now HorizonXI will will show up as a game to backup and restore.
