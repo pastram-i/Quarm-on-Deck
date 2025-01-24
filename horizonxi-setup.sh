@@ -1,5 +1,5 @@
 #!/bin/bash
-version=1.3.0
+version=1.3.1
 
 if [ -d "$HOME/Games/HorizonXI/Launcher" ]; then
   echo "Launcher folder already exists, running remove command on it. Press y to remove it when asked."
