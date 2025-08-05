@@ -1,16 +1,15 @@
-#!/bin/bash
-version=1.3.2-hotfix1
+u
+version=0.1.0
 
-if [ -d "$HOME/Games/HorizonXI/Launcher" ]; then
-  echo "Launcher folder already exists, running remove command on it. Press y to remove it when asked."
-  rm -Ivr "$HOME/Games/HorizonXI/Launcher"
-fi
-mkdir -p "$HOME/Games/HorizonXI/"{Downloads,Launcher/download,Prefix}
-pushd "$HOME/Games/HorizonXI/Launcher/download" || exit 1
-wget -c https://github.com/HorizonFFXI/HorizonXI-Launcher-Binaries/releases/download/v$version/HorizonXI-Launcher-$version.Setup.exe && \
-7z x HorizonXI-Launcher-$version.Setup.exe && \
-7z x HorizonXI_Launcher-$version-full.nupkg && \
-mv lib/net45/* "$HOME/Games/HorizonXI/Launcher/"
+# if [ -d "$HOME/Games/Quarm/Launcher" ]; then
+#   echo "Quarm folder already exists, running remove command on it. Press y to remove it when asked."
+#   rm -Ivr "$HOME/Games/Quarm/Launcher"
+# fi
+
+mkdir -p "$HOME/Games/Quarm/"{Downloads,Launcher/download,Prefix}
+pushd "$HOME/Games/Quarm" || exit 1
+curl -L "https://drive.usercontent.google.com/download?id=1qoBktDeJMJKPBr-EZxub1vspJhz11i1y&export=download&confirm=t" -o "$HOME/Downloads/quarm.zip" && \
+7z x "$HOME/Downloads/quarm.zip" -o "$HOME/Games/Quarm"
 popd || exit 1
 if [ ! -d "$HOME/Games/HorizonXI/Prefix/pfx" ]; then
   mkdir -p "$HOME/Games/HorizonXI/Prefix/pfx/drive_c/Program Files (x86)/HorizonXI"
