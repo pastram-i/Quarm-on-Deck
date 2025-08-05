@@ -1,5 +1,5 @@
 # IN DEVELOPMENT, currently not converted from HorizonXI.
-# For now - instructions are on [quarm.guide](https://quarm.guide/2025/04/23/linux-and-steam-deck-install-guide/) for this, I just want to make a seemless 1 line install for people.
+# For now - instructions are on [quarm.guide](https://quarm.guide/2025/04/23/linux-and-steam-deck-install-guide/) for this, I just want to make an easy 1 line install for people.
 
 # Setting up Quarm on Valve's Steam Deck
 *Inspired by https://github.com/TeamLinux01/HorizonXI-on-Deck*
