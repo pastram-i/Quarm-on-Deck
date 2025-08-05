@@ -1,9 +1,11 @@
+# IN DEVELOPMENT, currently not converted from HorizonXI.
+
 # Setting up Quarm on Valve's Steam Deck
 *Inspired by https://github.com/TeamLinux01/HorizonXI-on-Deck*
 
 These instructions and script install the Quarm Patcher.
 
-This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix. I will also turn on several add-ons that I use and set the resolution to 720p and rendering resolution to 1440p. I am doing using this resolution instead of 800p so that when I dock to a 16x9 screen, it doesn't stretch. Feel free to change it to 800p/1600p in the launcher.
+This script will automatically setup the Windows install path to be `C:\Program Files (x86)` inside the prefix.
 
 ## Prerequisites
 
